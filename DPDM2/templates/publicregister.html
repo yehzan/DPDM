@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Public Registration</title>
+    </head>
+<body>
+    <center><h1>Public Registration Form</h1></center>
+    <form method="POST">
+        {% csrf_token %}
+        {{ public_form.as_p }}
+        {{ log.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+{% extends "camp_header.html" %}
+{% block content %}
+
+    <center><form method="POST">
+    {% csrf_token %}
+
+    {{ camp_p.as_p }}
+    {{ emailf.as_p }}
+
+    <button type="submit">Submit</button>
+    </form></center>
+
+
+
+{% endblock%}
