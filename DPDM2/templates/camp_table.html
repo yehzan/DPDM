@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Camp table</title>
+    </head>
+    <body>
+        <center>
+        <h1>CAMP TABLE </h1>
+        <table border="3">
+            <tr>
+            <th>Camp ID</th>
+            <th>Camp Name</th>
+            <th>Address</th>
+            <th>District</th>
+            <th>City</th>
+            <th>Panchayat</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th></th>
+            </tr>
+            {% for user in users %}
+         <tr>
+            <td>{{ user.camp_id }}</td>
+            <td>{{ user.camp_name }}</td>
+            <td>{{ user.address }}</td>
+            <td>{{ user.district }}</td>
+            <td>{{ user.city }}</td>
+            <td>{{ user.panchayat }}</td>
+            <td>{{ user.contact }}</td>
+            <td>{{ user.email }}</td>
+         </tr>
+         {% endfor %}
+        </table>
+        </center>
+    </body>
+</html>
