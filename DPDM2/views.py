@@ -11,11 +11,9 @@ def index(request):
     return render(request,'usercontent.html')
 
 def admin_index(request):
-    return render(request,'admin/maincontent.html')
+    return render(request,'admin_home.html')
 
 
-def sidebar(request):
-    return render(request,'admin/baseadmin.html')
 
 def camp_entry(request):
     return render(request,'camp_home.html')
