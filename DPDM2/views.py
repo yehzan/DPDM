@@ -14,7 +14,6 @@ def admin_index(request):
     return render(request,'admin_home.html')
 
 
-
 def camp_entry(request):
     return render(request,'camp_home.html')
 
@@ -196,6 +195,6 @@ def volunteer_pro(request):
     return render(request,'volunteer_profile.html',{'volunteer_p':form,'emailf':emailform})
 
 
-
-
-# Create your views here.
+def camp_tab(request):
+    users = camp.objects.all()
+    return render(request,'camp_table.html',{'users': users})
